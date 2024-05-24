@@ -1,0 +1,77 @@
+/* estilo para os formumarios */
+form {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+h1 {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button{
+  align-items: center;
+  margin-left: 10px;
+  font-weight: 400;
+  width: 100%;
+  padding: 10px;
+  background-color: aquamarine;
+  border:none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top:10px;
+}
+
+a  {
+  color: black; 
+  text-decoration: none;
+  font-weight: 400;
+  font-size: larger;
+  margin-left: 10px;
+}
+
+
+.menu  {
+  background: #2ECC40;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 24px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: whitesmoke;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.cadastro {
+    text-align: center;
+}
+
+/* Estilo para mensagens de erro e sucesso */
+.message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.error {
+    background-color: #FF5733;
+    color: white;
+}
+
+.sucess {
+    background-color: #2ECC40;
+    color: white;
+}
+

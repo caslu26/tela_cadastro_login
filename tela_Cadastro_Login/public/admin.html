@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Gerenciador de Cardápio</title>
+  </head>
+  <body>
+    <header>
+      <h1>Tela de cadastro novos produtos</h1>
+      <br />
+    </header>
+
+    <div>
+      <br /><br />
+
+      <form action="/admin" method="POST" id="addForm">
+        ID do Produto:
+        
+
+        Nome do Produto:
+        <input type="text" id="nomeProduto" name="nomeProduto" /><br /><br />
+
+        Preço do Produto:
+        <input
+          type="number"
+          id="precoProduto"
+          name="precoProduto"
+          step="0.01"
+        />
+
+        Imagem do Produto:
+        <input
+          type="file"
+          id="imagemProduto"
+          name="imagemProduto"
+          accept="image/*"
+        /><br /><br />
+
+        Descrição do Produto:
+        <input
+          type="textarea"
+          id="descricaoProduto"
+          name="descricaoProduto"
+        /><br /><br />
+
+        <input type="submit" id="enviar" />
+      </form>
+    </div>
+
+    <section class="product-table">
+      <h2>Tabela de produtos</h2>
+      <div class="slider">
+        <table id="contatos" border="1">
+          <thead>
+            <tr class="cabeçalho">
+              <th class="list-item">ID Produto</th>
+              <th class="list-item">Nome Produto</th>
+              <th class="list-item">Preço Produto</th>
+              <th class="list-item">Descrição Produto</th>
+            </tr>
+          </thead>
+
+          <tbody id="corpoTabela">
+            <!-- Dados serão inseridos aqui -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <script src="Apps.js"></script>
+    <script src="arquivos.js"></script>
+    <script src="script.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
